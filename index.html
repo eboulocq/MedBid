@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedBid</title>
+
+    <link rel="icon" type="image/png" href="MBicon.png">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+        <div class="logo-row">
+            <div class="logo-mark">MB</div>
+            <h1>MedBid</h1>
+        </div>
+        <p class="subtitle">Reverse-Auction Marketplace for Hospital Supplies</p>
+        <p class="team-line">Team: Eduardo, Edna, Jeremiah, Tasfique, Aitur</p>
+    </div>
+</header>
+
+<nav>
+    <button onclick="showView('login-view')" id="nav-login">Login</button>
+    <button onclick="showView('buyer-view')" id="nav-buyer">Buyer</button>
+    <button onclick="showView('supplier-view')" id="nav-supplier">Supplier</button>
+    <button onclick="showView('admin-view')" id="nav-admin">Admin</button>
+</nav>
+
+<div id="current-user-box"></div>
+
+<!-- LOGIN VIEW -->
+<div id="login-view" class="view">
+    <h2>Login</h2>
+    <input id="login-username" placeholder="Username" />
+    <select id="login-role">
+        <option value="buyer">Buyer</option>
+        <option value="supplier">Supplier</option>
+        <option value="admin">Admin</option>
+    </select>
+    <button onclick="login()">Login</button>
+</div>
+
+<!-- BUYER VIEW -->
+<div id="buyer-view" class="view hidden">
+    <h2>Buyer Dashboard</h2>
+
+    <h3>Create New Request</h3>
+    <input id="req-item" placeholder="Item name" />
+    <input id="req-qty" placeholder="Quantity" type="number" />
+    <input id="req-desc" placeholder="Description" />
+    <button onclick="createRequest()">Submit Request</button>
+
+    <h3>Your Requests</h3>
+    <div id="buyer-requests"></div>
+</div>
+
+<!-- SUPPLIER VIEW -->
+<div id="supplier-view" class="view hidden">
+    <h2>Supplier Dashboard</h2>
+    <div id="supplier-requests"></div>
+</div>
+
+<!-- ADMIN VIEW -->
+<div id="admin-view" class="view hidden">
+    <h2>Admin Dashboard</h2>
+    <p>Total Users: <span id="admin-user-count">0</span></p>
+    <p>Total Requests: <span id="admin-request-count">0</span></p>
+    <div id="admin-data"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
