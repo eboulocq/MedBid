@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6fa;
+    color: #1e2b3a;
+}
+
+header {
+    background: #294a70;
+    color: white;
+    padding: 18px;
+    text-align: center;
+}
+
+.header-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.logo-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo-mark {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #294a70;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.subtitle {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.team-line {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #e4e8f5;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    background: white;
+    padding: 12px;
+    border-bottom: 1px solid #d1d8e5;
+}
+
+nav button {
+    padding: 10px 20px;
+    border: none;
+    background: #8bafe6;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+nav button.active {
+    background: #294a70;
+    color: white;
+}
+
+#current-user-box {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.view {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+.hidden {
+    display: none;
+}
+
+input, select, button {
+    margin: 6px 0;
+    padding: 8px;
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    background: #294a70;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+button:hover {
+    background: #1f3a59;
+}
+
+.request-box, .bid-box {
+    border: 1px solid #d1d8e5;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    background: #f9fbff;
+}
