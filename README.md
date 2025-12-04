@@ -1,7 +1,4 @@
 # MedBid
-MedBid is a small prototype for a reverse-auction marketplace for hospital supplies. The project includes basic buyer, supplier, and admin views, with simple request and bidding workflows used for the course demonstration.
-
-MedBid — Reverse-Auction Marketplace for Hospital Supplies
 
 MedBid is a small front-end prototype built for the CEN4010 Software Engineering course. The idea is to simulate how a reverse-auction system could work for hospital supply purchasing. Buyers can post supply requests, suppliers can submit bids, and an admin can view system activity. This project was developed as a team assignment and is intended for demonstration purposes only.
 
@@ -43,7 +40,7 @@ How to Run:
 
     Open the project folder
 
-    Double-click index.html to open it in a browser (Chrome, Firefox, Edge, etc.)
+    Double-click index.html to open it in a browser 
 
     No server or installation required
 
@@ -76,7 +73,7 @@ All data is stored temporarily in memory (no database)
 
 The design is intentionally simple for demonstration purposes
 
-Future Improvements (if needed):
+Future Improvements :
 
     Persistent database for real request history
 
